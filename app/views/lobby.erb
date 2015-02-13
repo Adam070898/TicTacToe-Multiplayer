@@ -1,0 +1,13 @@
+<hidden><%= user = User.where(id: session[:user]).first%></hidden>
+<hidden><%= games = Game.where(status: "waiting")%></hidden>
+<hidden><%= counter = 0 %></hidden>
+<h2>Welcome to the Lobby</h2>
+<p>Logged in as <a href="/user/<%= user.id %>"><%= user.name %></a></p>
+<div class="box">
+  <h2>Click to join a game</h2>
+  <% games.each do |game| %>
+    <p><%= counter += 1 %>. <a href="/play/<%= game.id %>"><%= game.name %></a></p>
+  <% end %>
+</div>
+<br>
+<a href='/logout'>Log Out</a>

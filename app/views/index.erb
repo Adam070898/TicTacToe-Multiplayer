@@ -1,0 +1,11 @@
+<div class="box">
+  <form name="login" method="post" action="/<%= @action %>">
+    <%= @name %>
+    <p><input type="text" name="email" size="27" placeholder="Email"></p>
+    <p><input type="password" name="pass" placeholder="Password">
+      <input type="submit" value="<%= @button %>"></p>
+  </form>
+</div>
+<error><br><%= @error %><error>
+<br>
+<%= @clickhere %>

@@ -1,0 +1,81 @@
+* {
+  margin-top: 0px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 70%;
+  height: 100%;
+  padding: 0px 20px 20px 20px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.title {
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+error {
+  padding-top: 60px;
+  margin: 50px;
+}
+
+invis {
+  color: white;
+  font-size: 10em
+}
+
+hidden {
+  display: none;
+}
+
+.board {
+  text-align: center;
+  white-space: pre;
+}
+
+table {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+/*  position: inline;*/
+  width: 500px;
+  height: 500px;
+  border-color: 1px solid gray;
+}
+
+tr {
+  padding: 0px;
+  margin: 0px;
+}
+
+td {
+  margin: 0px;
+  padding: 0px;
+  height: 167px;
+  width: 167px;
+  font-size: 9em;
+  border: 5px solid gray;
+}
+
+player1 {
+  text-align: left;
+  float:left;
+  font-size: 2em;
+}
+player2 {
+  text-align: right;
+  float:right;
+  font-size: 2em;
+}

@@ -1,0 +1,24 @@
+<p class="board">
+<script></script>
+<p><player1><%= @player1.name %> : X</player1><current></current><player2>O : <%= @player2.name %></player2></p><br>
+<table>
+  <tr>
+    <td onclick="clicks[1]()"><%= @hash[0] %></td>
+    <td onclick="clicks[2]()"><%= @hash[1] %></td>
+    <td onclick="clicks[3]()"><%= @hash[2] %></td>
+  </tr>
+  <tr>
+    <td onclick="clicks[4]()"><%= @hash[3] %></td>
+    <td onclick="clicks[5]()"><%= @hash[4] %></td>
+    <td onclick="clicks[6]()"><%= @hash[5] %></td>
+  </tr>
+  <tr>
+    <td onclick="clicks[7]()"><%= @hash[6] %></td>
+    <td onclick="clicks[8]()"><%= @hash[7] %></td>
+    <td onclick="clicks[9]()"><%= @hash[8] %></td>
+  </tr>
+</table>
+</p>
+<hidden id="turn"><%= @game.turn %></hidden>
+<hidden id="gameid"><%= @game.id %></hidden>
+<hidden id="board"><%= @game.board %></hidden>

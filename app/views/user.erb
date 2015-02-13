@@ -1,0 +1,12 @@
+<h1>User Profile</h1>
+<p>User ID: <%= @user.id %> </p>
+<p>Name: <%= @user.name %></p>
+<p>Email: <%= @user.email %> </p>
+<div class="box">
+  <h2>Match History</h2>
+  <% @games.each do |game| %>
+    <p><%= game.name %> - <%= game.player1 %> vs. <%= game.player2 %> - <%= game.result %></p>
+  <% end %>
+</div>
+<br>
+<a href="/lobby">Back to Lobby</a>
